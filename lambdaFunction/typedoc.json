@@ -1,0 +1,5 @@
+{
+  "out": "docs/",
+  "githubPages": false,
+  "cleanOutputDir": true
+}

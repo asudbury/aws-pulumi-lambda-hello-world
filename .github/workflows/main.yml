@@ -1,0 +1,31 @@
+name: Build Lambda Function
+on: push
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: Install Dependencies
+        working-directory: lambdaFunction
+        run: |
+          npm install
+
+      - name: Build
+        working-directory: lambdaFunction
+        run: |
+          npm run build
+
+      - name: Lint
+        working-directory: lambdaFunction
+        run: |
+          npm run lint
+
+      - name: Unit Tests
+        working-directory: lambdaFunction
+        run: |
+          npm test

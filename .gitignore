@@ -1,0 +1,10 @@
+.vscode/
+node_modules/
+infrastructure/node_modules/
+lambdaFunction/node_modules/
+tests/.env
+tests/node_modules/
+lambdaFunction/build/
+lambdaFunction/tests/.env
+lambdaFunction/coverage/
+lambdaFunction/docs/

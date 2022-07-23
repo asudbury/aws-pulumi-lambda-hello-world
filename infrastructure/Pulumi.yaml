@@ -1,0 +1,3 @@
+name: hello-world
+runtime: nodejs
+description: Lambda function to get search filters

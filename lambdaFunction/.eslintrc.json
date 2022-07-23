@@ -1,0 +1,27 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true,
+    "jest/globals": true
+  },
+  "extends": ["airbnb-base", "eslint:recommended", "plugin:jest/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "settings": {
+    "import/extensions": [".js", ".ts", ".jsx", ".tsx"]
+  },
+  "plugins": ["@typescript-eslint", "only-warn", "jest"],
+  "rules": {
+    "linebreak-style": 0,
+    "max-len": ["error", 100],
+    "operator-linebreak": ["error", "after"],
+    "func-names": ["error", "never"],
+    "comma-dangle": ["error", "never"],
+    "import/extensions": ["off"],
+    "import/no-unresolved": ["off"],
+    "import/no-import-module-exports": ["off"]
+  }
+}
